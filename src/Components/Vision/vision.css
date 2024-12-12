@@ -1,0 +1,93 @@
+
+
+/* boxes */
+
+.vision-box-main{
+    padding-top: 30px;
+    transition: 0.3s ease all;
+}
+
+.vision-item-box{
+    margin-bottom: 20px !important;
+    padding: 30px;
+    width: auto;
+    min-width: 180px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    /* box-shadow: 2px 1px 2px 0px rgba(0,0,0,0.26); */
+    /* border: 1px solid #D9D9D9; */
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    height: 370px;
+    transition: 0.3s ease all;
+}
+.vision-item-box:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+}
+/* .vision-item-icon{ */
+    /* padding: 30px; */
+    /* background-color: black; */
+    /* width: 100px; */
+    /* height: 100px; */
+    /* border-radius: 100px; */
+    /* border: 1px solid #D9D9D9; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin-bottom: 30px; */
+/* } */
+/* .vision-item-icon > i  {
+   color: var(--them-color);
+    font-size: 25px;
+} */
+
+
+.vision-item-icon {
+    padding: 30px;
+    background-color: var(--theme-dark-bg, black); /* Use a theme variable for background */
+    border-radius: 50%; /* Ensures perfect circle */
+    border: 2px solid var(--theme-border-color, #D9D9D9); /* Theme-driven border color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+    width: 100px; /* Ensures consistent size */
+    height: 100px; /* Matches width for perfect circle */
+}
+
+.vision-item-icon > i {
+    color: var(--them-color); /* Use theme color for icon */
+    font-size: 32px; /* Slightly larger for better visibility */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.vision-item-icon:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
+    background-color: var(--theme-hover-bg, #1f1f1f); /* Theme-driven hover background */
+}
+
+.vision-item-icon > i:hover {
+    color: var(--theme-hover-color, #089893); /* Theme-driven hover color */
+    transform: rotate(15deg); /* Slight rotation for a playful effect */
+}
+
+.vision-item > p {
+    font-size: 15px;
+}
+.vision-item > h2 {
+    font-size: 24px;
+}
+
+/* .vision-item-box:hover{
+    box-shadow: 0 1px 17px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease all;
+} */
+
+
+@media (max-width: 768px) {
+    .vision-item > p {
+        font-size: 14px;
+    }
+  } 

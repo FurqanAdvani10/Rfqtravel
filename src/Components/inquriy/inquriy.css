@@ -1,0 +1,125 @@
+.section-padding{
+    padding-block: 70px;
+  }
+
+.inquiry-header{
+    margin-bottom: 40px;
+}
+.inquiry-header h3{
+    font-size: 40px;
+    font-family: var(--font-family);
+
+}
+
+.inquiry-content label{
+    font-size: 15px;
+    color: #838383;
+}
+.inquiry-content select{
+    font-size: 15px;
+    color: #050404;
+    padding: 10px;
+}
+.inquiry-content input{
+    padding: 10px;
+    min-height: 52px;
+    border: 1px solid  #E4E4E4;
+
+}
+.inquiry-content input::placeholder{
+    color: #8383837a;
+}
+
+.inquiry-img{
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.inquiry-img img{
+    width: 420px;
+    height: auto;
+    object-fit: contain;
+}
+.text-section {
+    width: 100%;
+}
+.text-section textarea{
+    border: 1px solid #E4E4E4;
+    padding: 15px;
+}
+.text-section textarea::placeholder {
+    color: #bdbdbd8d;
+}
+.inquiry-btn{
+    padding-top: 30px;
+    text-align: center;
+}
+.inquiry-btn > button{
+    text-decoration: none;
+    padding: 10px 50px;
+    background-color: #947139;
+    color: aliceblue;
+    border-radius: 8px;
+    border: none;
+}
+.inquiry-content input{
+    margin-bottom: 1REM;
+}
+.inquiry-content select{
+    margin-bottom: 1REM;
+    
+}
+.form-control {
+    box-shadow: none;
+    border-color: #E4E4E4 !important;
+}
+.form-select{
+    box-shadow: none !important;
+    border-color: #E4E4E4 !important;
+
+}
+input{
+    background-color: white!important;
+}
+input:internal-autofill-selected {
+    background-color: none;
+}
+.form-control{
+    background-color: transparent !important;
+    background: none !important;
+}
+.p_msg{
+    color: red;
+    font-size: 13px;
+}
+.msg{
+    margin-top: 10px;
+}
+@media  (max-width: 767px)  {
+    p{
+        font-size: 13px !important;
+    }
+
+    .inquiry-header {
+        margin-bottom: 30px;
+    }
+    .inquiry-header h3 {
+        font-size: 25px;
+    }
+    .inquiry-img img{
+        margin-block: 40px;
+        width: 90%;
+        object-fit: contain;
+    }
+   
+    }
+    @media (min-width :768px) and (max-width : 991px){
+        .inquiry-img img{
+            margin-block: 60px;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+  

@@ -1,0 +1,18 @@
+.accommodation{
+    background-image: url('../../Assets/accommodation.webp') !important;
+}
+.manasik{
+    background-image: url('../../Assets/manasik.webp') !important;
+}
+.guidance {
+    background-image: url('../../Assets/guidance.webp') !important;
+}
+.booking{
+    background-image: url('../../Assets/booking.webp') !important;
+}
+.transportation{
+    background-image: url('../../Assets/transport.webp') !important;
+}
+.processing{
+    background-image: url('../../Assets/procesing.webp') !important;
+}

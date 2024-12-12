@@ -1,0 +1,28 @@
+.new-box-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.news-img img{
+    width: 400px;
+    height: 300px;
+    /* object-fit: contain; */
+}
+.news-content{
+    /* font-size: 30px; */
+    padding-top: 20px !important;
+    /* line-break: auto; */
+}
+.news-content h4{
+    font-size: 27px;
+    letter-spacing: 1px;
+    font-weight: 200 !important;
+    font-family: var(--font-family);
+}
+.new-box:hover{
+    color: #947139;
+}
+.news-img img {
+    width: 100%;
+    object-fit: cover;
+}

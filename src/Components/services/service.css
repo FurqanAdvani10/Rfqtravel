@@ -1,0 +1,74 @@
+.section-padding {
+    padding-block: 60px;
+}
+.service-heading h4 span{
+    font-weight: var(--h4-span-weig);
+}
+.service-heading h4 {
+    font-size: 30px;
+    font-weight: 300;
+    
+}
+.service-heading h1 {
+    /* font-family: var(--font-family); */
+    /* font-size: var(--big-font); */
+}
+.service-card {
+    background-image: url(../../Assets/10.jpg);
+    /* width: 380px; */
+    height: 550px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.service-main{
+    padding-top: 30px;
+    display: flex;
+}
+.ser-content-box{
+    background-color: aliceblue;
+}
+.service-card{
+    background-image: url(https://site.sociolib.com/tawaf/wp-content/uploads/sites/10/2023/11/10.jpg);
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 20PX;
+    background-position: center;
+    background-size: cover;
+}
+.service-content{
+    background-color: rgb(254, 253, 251) ;
+    padding: 20px;
+    width: 100%;
+}
+.service-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+}
+.service-card-icon > i{
+    font-size: 30px;
+    color: #947139;
+}
+.service-card-title h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.service-card-title p{
+    font-size: 15px;
+}
+.service-card-box{
+    margin-top: 20px;
+}
+.hajj{
+    background-image: url(../../Assets/11.jpg) !important;
+}
+.tour{
+    background-image: url(../../Assets/12-1.jpg) !important;   
+}

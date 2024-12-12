@@ -1,0 +1,119 @@
+/* General Styles */
+/* Video Container */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(148, 113, 57, 0.6));
+  z-index: 1;
+}
+
+/* Video Content */
+.video-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+  padding: 0 20px; /* Ensure proper spacing on smaller screens */
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  margin-top: 20px;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero-button {
+  margin-top: 40px;
+  padding: 12px 30px;
+  border: none;
+  color: white;
+  background-color: #947139;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-button:hover {
+  background-color: #7d602e;
+  transform: scale(1.05);
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .video-container {
+    height: 90vh;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-button {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+  .hero-button {
+    padding: 8px 20px;
+    font-size: 0.8rem;
+  }
+  .video-content{
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-container {
+    height: 90vh;
+  /* padding: 0 20px; */
+
+  }
+  .hero-title {
+    font-size: 1.6rem;
+  }
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  .hero-button {
+    padding: 6px 18px;
+    font-size: 0.75rem;
+  }
+  .video-content{
+    padding: 0;
+  }
+
+}

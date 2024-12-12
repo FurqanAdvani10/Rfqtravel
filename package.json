@@ -6,10 +6,19 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "antd": "^5.22.2",
+    "css-loader": "^7.1.2",
+    "fontawesome": "^5.6.3",
+    "formik": "^2.4.6",
+    "icofont": "^1.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.0"
+    "react-router-dom": "^7.0.1",
+    "react-scripts": "^5.0.1",
+    "source-map-loader": "^5.0.0",
+    "swiper": "^11.1.15",
+    "web-vitals": "^2.1.0",
+    "yup": "^1.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
