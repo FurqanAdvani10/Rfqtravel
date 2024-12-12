@@ -1,15 +1,9 @@
+/* General Styling */
 .program-title {
-  font-size: 2rem;
+  font-size: 2rem; /* Adjusted for smaller screens */
   font-weight: bold;
   color: #003366;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-.package-details li {
-  font-size: 1rem;
-  line-height: 1.8;
-  margin-bottom: 5px;
 }
 
 .feature-list li {
@@ -24,7 +18,7 @@
 }
 
 .module-title {
-  font-size: 1.75rem;
+  font-size: 1.75rem; /* Adjusted for smaller screens */
   font-weight: bold;
   color: #0056b3;
   text-align: center;
@@ -34,7 +28,7 @@
 
 .module-title::after {
   content: "";
-  width: 60px;
+  width: 60px; /* Adjusted for smaller screens */
   height: 3px;
   background: linear-gradient(to right, #0056b3, #00c4ff);
   display: block;
@@ -55,6 +49,11 @@
   font-size: 1.25rem;
   font-weight: 600;
   color: #003366;
+}
+
+.module-card ul li {
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 .img-fluid {
@@ -84,45 +83,49 @@
 /* Responsive Layout */
 @media (max-width: 768px) {
   .program-title {
-      font-size: 1.5rem;
+      font-size: 1.5rem; /* Smaller title for mobile */
   }
 
   .details-container {
-      padding: 20px 15px;
+      padding: 20px 15px; /* Reduced padding for smaller screens */
   }
 
   .row {
-      flex-direction: column;
-      gap: 20px;
+      flex-direction: column; /* Stack rows vertically */
   }
 
-  .col-lg-5 {
-      order: 2;
+  .col-md-6 {
+      width: 100%; /* Make full-width on mobile */
+      margin-bottom: 20px; /* Add spacing between stacked sections */
   }
 
-  .col-lg-6 {
-      order: 1;
+  .module-card {
+      margin-bottom: 20px; /* Add spacing between modules */
   }
 
   .module-title {
-      font-size: 1.5rem;
+      font-size: 1.5rem; /* Adjust module title for smaller screens */
+  }
+
+  .list-unstyled li {
+      font-size: 0.9rem; /* Smaller text for lists */
   }
 }
 
 @media (max-width: 576px) {
   .program-title {
-      font-size: 1.25rem;
+      font-size: 1.25rem; /* Further reduce title size for smaller screens */
   }
 
   .module-title {
-      font-size: 1.25rem;
+      font-size: 1.25rem; /* Adjust module title for extra small screens */
   }
 
   .img-fluid {
-      max-width: 100%;
+      max-width: 100%; /* Ensure image doesn't overflow */
   }
 
-  .package-details li, .feature-list li {
-      font-size: 0.85rem;
+  .list-unstyled li {
+      font-size: 0.85rem; /* Smaller text for very small screens */
   }
 }

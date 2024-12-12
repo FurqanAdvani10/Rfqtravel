@@ -2,6 +2,8 @@ import React from 'react'
 import { FAQ, PageWrapper, Services, Testimonials, Vision } from '../../Components'
 import about from '../../Assets/33.webp'
 import './about.css'
+import Gallery from '../../Components/Gallery/Gallery'
+import ceo from './../../Assets/rfqceo.JPG'
 
 function AboutUs() {
     return (
@@ -32,6 +34,15 @@ function AboutUs() {
                                     <p className='para-bold'>Our company offer customizable packages that cater to the varying needs and preferences of pilgrims. These packages may include services such as flights, accommodation, transportation, and guided tours.
                                     </p>
                                 </div>
+                                <div className='ceo-content'>
+                                    <div className='ceo-img'>
+                                        <img src={ceo} alt='' />
+                                    </div>
+                                    <div className='ceo-main'>
+                                        <h6 className='p-0 m-0'>AMIR ANWAR</h6>
+                                        <p className='p-0 m-0'>CEO of Karwan e Rafeeq ul Harmain</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div className='col-md-5 col-sm-12 col-lg-5 col-xl-5'>
@@ -43,6 +54,7 @@ function AboutUs() {
                 </div>
             </div>
             <Vision />
+            <Gallery />
             <Services />
             <Testimonials />
             <FAQ />
