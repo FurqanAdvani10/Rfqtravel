@@ -102,7 +102,7 @@
   .video-overlay {
     /* position: absolute; */
     /* width: 100%; */
-    height: auto;
+    height: 100vh;
     /* background: rgba(0, 0, 0, 0.5); */
     /* z-index: 1; */
   }
