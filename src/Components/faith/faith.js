@@ -92,7 +92,7 @@ function Faith() {
                                             </div>
                                             <div className='faith-content-box'>
                                                 <h4 className='p-0 m-0'>Mina</h4>
-                                                <p >Lorem ipsum dolor sit amet, consectetur ela mattis.</p>
+                                                <p >Pilgrims stay here during the days of Hajj.</p>
                                             </div>
                                         </div>
                                     </div>

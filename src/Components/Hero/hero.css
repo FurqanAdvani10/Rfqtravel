@@ -2,7 +2,7 @@
 .video-container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -10,10 +10,12 @@
 }
 
 .video {
-  width: 100%;
-  height: 100%;
+  width: 100vw; /* Ensures full width */
+  height: 100vh; /* Ensures full height */
   object-fit: cover;
-  filter: brightness(0.85); /* Slightly darken video for better text contrast */
+  position: absolute; /* Ensures it stays in place */
+  top: 0;
+  left: 0;
 }
 
 .video-overlay {

@@ -19,8 +19,8 @@ const ContactUs = () => {
   }, []);
 
   const infoCards = [
-    { title: "Head Office", address: "office #103 iconic teades center near KBC Resturant Bahudrabad, karachi ", icon: <FaMapMarkerAlt /> },
-    { title: "Phone Number", address: "+9221 34857005, 34856651, 34131110", icon: <FaPhoneAlt /> },
+    { title: "Head Office", address: "Office #103 Iconic Trade Center Bahadurabad, Karachi ", icon: <FaMapMarkerAlt /> },
+    { title: "Phone Number", address: "+9221 34857005, 34856651, 333 2184494 ,322 2184494", icon: <FaPhoneAlt /> },
     { title: "Send Email", address: "info@rfqtravel.com", icon: <FaEnvelope /> },
     { title: "Our Website", address: "www.rfqtravel.com", icon: <FaGlobe /> },
   ];
@@ -80,11 +80,11 @@ const ContactUs = () => {
               <div className="col-md-6 col-xl-8 col-lg-8 col-sm-12">
                 <div className="map-section">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d930.0!2d67.0667851!3d24.8824713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f6c81ec0f21%3A0x3236ca210d5aaa08!2sKarwan%20e%20Rafeeq%20ul%20harmain%20Pvt%20Ltd!5e0!3m2!1sen!2s!4v1699986456985!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d930.0!2d67.0585244!3d24.8820308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f0131f9c6c5%3A0xe57eacee2fe6169c!2sIconic%20Trade%20Center%20(ICT)!5e0!3m2!1sen!2s!4v1699986456985!5m2!1sen!2s"
                     style={{
                       border: "0",
                       width: "100%", // Make the width responsive
-                      height: "390px", // Fixed height
+                      height: "410px", // Fixed height
                     }}
                     allowfullscreen=""
                     loading="lazy"
