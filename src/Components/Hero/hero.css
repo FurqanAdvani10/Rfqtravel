@@ -99,6 +99,9 @@
 }
 
 @media (max-width: 480px) {
+  .video {
+    height: auto;
+  }
   .video-container {
     min-height: auto;
   }
