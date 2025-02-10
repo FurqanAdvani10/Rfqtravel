@@ -100,7 +100,7 @@
 
 @media (max-width: 480px) {
   .video-container {
-    min-height: 85vh;
+    min-height: auto;
   }
   .hero-title {
     font-size: 1.6rem;
