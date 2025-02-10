@@ -50,11 +50,7 @@
         height: 40px;
     }
     .content-icon{
-         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .06) !important; 
-         /* border: 1px solid; */
          padding: 0 15px;
-         /* display: flex; */
-         justify-content: center !important;
     }
     .faith {
         display: flex;

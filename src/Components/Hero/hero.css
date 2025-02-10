@@ -1,16 +1,19 @@
 /* General Styles */
-/* Video Container */
 .video-container {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(0.85); /* Slightly darken video for better text contrast */
 }
 
 .video-overlay {
@@ -19,7 +22,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(148, 113, 57, 0.6));
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
   z-index: 1;
 }
 
@@ -32,47 +35,50 @@
   color: white;
   text-align: center;
   z-index: 2;
-  padding: 0 20px; /* Ensure proper spacing on smaller screens */
+  width: 85%;
+  max-width: 800px;
 }
 
+/* Arabic Subtitle */
 .hero-subtitle {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-bottom: 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
+/* Main Title */
 .hero-title {
-  margin-top: 20px;
   font-size: 3rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.3;
+  text-transform: capitalize;
 }
 
+/* Call-to-Action Button */
 .hero-button {
-  margin-top: 40px;
+  margin-top: 25px;
   padding: 12px 30px;
   border: none;
   color: white;
-  background-color: #947139;
   font-size: 1rem;
   font-weight: bold;
+  /* border-radius: 5px; */
   cursor: pointer;
-  border-radius: 5px;
+  background: #947139;
   transition: all 0.3s ease-in-out;
 }
 
+/* Button Hover Effect */
 .hero-button:hover {
-  background-color: #7d602e;
-  transform: scale(1.05);
+  background: #7d602e;
+  transform: translateY(-3px);
 }
 
-/* Responsiveness */
+/* Responsive Design */
 @media (max-width: 1024px) {
-  .video-container {
-    height: 90vh;
-  }
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
   }
   .hero-button {
     padding: 10px 25px;
@@ -82,38 +88,26 @@
 
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .hero-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
+  }
+  .hero-button {
+    padding: 10px 22px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
   }
   .hero-button {
     padding: 8px 20px;
     font-size: 0.8rem;
   }
-  .video-content{
-    padding: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .video-container {
-    height: 90vh;
-  /* padding: 0 20px; */
-
-  }
-  .hero-title {
-    font-size: 1.6rem;
-  }
-  .hero-subtitle {
-    font-size: 1.1rem;
-  }
-  .hero-button {
-    padding: 6px 18px;
-    font-size: 0.75rem;
-  }
-  .video-content{
-    padding: 0;
-  }
-
 }

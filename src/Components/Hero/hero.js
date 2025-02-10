@@ -10,12 +10,10 @@ function Hero() {
           <source src={video} type="video/mp4" />
         </video>
         <div className="video-overlay"></div>
-        <div className="video-content" data-aos="fade-up" data-aos-duration="2000">
+        <div className="video-content" data-aos="fade-up" data-aos-duration="1500">
           <h4 className="hero-subtitle">لَبَّيْكَ اللَّهُمَّ لَبَّيْك</h4>
-          <h1 className="hero-title">Umrah with Ease, Faith with Peace</h1>
-          <button className="hero-button" onClick={() => alert('Getting Started!')}>
-            GET STARTED
-          </button>
+          <h1 className="hero-title">Experience a Peaceful Pilgrimage with Karwan-e-Rafeeq ul Harmain</h1>
+          <button className="hero-button">Get Started</button>
         </div>
       </div>
     </div>

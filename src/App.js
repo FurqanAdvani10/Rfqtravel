@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import whatsappIcon from './Assets/whatsapp.png'
 import { Footer, Header } from './Components';
-import { Suspense, lazy } from 'react';
+import { Suspense, lazy, useEffect } from 'react';
 import Cloader from './Components/Loader/Cloader';
 import Features from './Pages/Features/features';
 import Details from './Pages/Details/Details';
@@ -16,6 +16,11 @@ const AboutUs = lazy(() => import('./Pages/AboutUs/AboutUs'));
 const HajjPackages = lazy(() => import('./Pages/HajjPackages/hajj'));
 
 function App() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
+
   return (
     <>
       <Header />
@@ -34,7 +39,7 @@ function App() {
         </Routes>
       </Suspense>
       <Footer />
-      <div className='fixed-bottom right-100 p-4' style={{ zIndex: "6", left: "initial" }}>
+      <div className='responsive-styling fixed-bottom right-100 p-4' style={{ zIndex: "6", left: "initial" }}>
         <a href='https://wa.me/923332184494?text=Hello How can I help you ?' target='_blank'>
           <img src={whatsappIcon} width="120" alt='aaaa' />
         </a>

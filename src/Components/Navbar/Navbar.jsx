@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import './navbar.css';
 import { useNavigate } from 'react-router-dom';
-import logo from '../../Assets/logo.jpg';
+import logo from '../../Assets/rfqlogo.png';
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -46,7 +46,7 @@ function Header() {
               <a className="nav-link" onClick={() => navigate('/hajj')}>Hajj Packages</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link"  onClick={() => navigate('/service')}>services</a>
+              <a className="nav-link"  onClick={() => navigate('/service')}>Services</a>
             </li>
             <li className="nav-item">
               <a className="nav-link"  onClick={() => navigate('/about')}>About Us</a>
@@ -57,7 +57,7 @@ function Header() {
             
           </ul>
           <div className="navbar-icons">
-            <button className="btn btn-outline-primary">Contact Now</button>
+            <button className="btn btn-outline-primary" onClick={() => navigate('/contactUs')}>Contact Now</button>
           </div>
         </div>
       </div>

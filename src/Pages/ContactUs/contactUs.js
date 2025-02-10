@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './contactUs.css';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaGlobe } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
@@ -13,6 +13,10 @@ const ContactUs = () => {
   const center = [24.8505366, 66.9950476]; // Latitude, Longitude
 
   const navigate = useNavigate()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
 
   const infoCards = [
     { title: "Head Office", address: "office #103 iconic teades center near KBC Resturant Bahudrabad, karachi ", icon: <FaMapMarkerAlt /> },

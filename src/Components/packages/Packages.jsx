@@ -14,7 +14,7 @@ const Packages = () => {
                     <div className='col-sm-12 col-md-12 col-lg-12 col-xl-12 col-12'>
                             <div className="hajj-packages heading-with-sub">
                                 <h6 className="p-0 m-0">PACKAGES</h6>
-                                <h3 className="p-0 m-0">previous Hajj Packages 2024</h3>
+                                <h3 className="p-0 m-0">Previous Hajj Packages 2024</h3>
                             </div>
                     </div>
                 </div>

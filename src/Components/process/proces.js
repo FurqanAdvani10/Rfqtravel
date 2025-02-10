@@ -20,7 +20,7 @@ function Process() {
                                     </div>
                                     <div className='pro-con'>
                                         <h4 className='p-0 m-0'>Choose Package</h4>
-                                        <p className='p-0 m-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit elit tellus luctus.</p>
+                                        <p className='p-0 m-0'>Browse our carefully curated packages tailored to suit your needs and budget.</p>
                                     </div>
                                 </div>
                                 <div className='process-contant-no'>
@@ -29,7 +29,7 @@ function Process() {
                                     </div>
                                     <div className='pro-con'>
                                         <h4 className='p-0 m-0'>Fill Your Documents</h4>
-                                        <p className='p-0 m-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit elit tellus luctus.</p>
+                                        <p className='p-0 m-0'>Submit the necessary documents easily for a hassle-free booking process.</p>
                                     </div>
                                 </div>
                                 <div className='process-contant-no'>
@@ -38,7 +38,7 @@ function Process() {
                                     </div>
                                     <div className='pro-con'>
                                         <h4 className='p-0 m-0'>Enjoy Your Travel</h4>
-                                        <p className='p-0 m-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit elit tellus luctus.</p>
+                                        <p className='p-0 m-0'>Embark on your spiritual journey with peace of mind and exceptional service.</p>
                                     </div>
                                 </div>
                             </div>

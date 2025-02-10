@@ -36,7 +36,7 @@ function Faith() {
                                         </div>
                                         <div className='faith-content-box'>
                                             <h4 className='p-0 m-0'>Tawaf</h4>
-                                            <p >Lorem ipsum dolor sit amet, consectetur ela mattis.</p>
+                                            <p >Circling the Kaaba seven times is a key ritual.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -47,7 +47,7 @@ function Faith() {
                                         </div>
                                         <div className='faith-content-box'>
                                             <h4 className='p-0 m-0'>Ihram</h4>
-                                            <p >Lorem ipsum dolor sit amet, consectetur ela mattis.</p>
+                                            <p >Wearing white garments is essential for Hajj and Umrah.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -58,7 +58,7 @@ function Faith() {
                                         </div>
                                         <div className='faith-content-box'>
                                             <h4 className='p-0 m-0'>Prayer Mat</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur ela mattis.</p>
+                                            <p>A clean and sacred mat is used for prayers..</p>
                                         </div>
                                     </div>
                                 </div>
@@ -69,7 +69,7 @@ function Faith() {
                                         </div>
                                         <div className='faith-content-box'>
                                             <h4 className='p-0 m-0'>Jamarat</h4>
-                                            <p >Lorem ipsum dolor sit amet, consectetur ela mattis.</p>
+                                            <p >Throwing pebbles at pillars symbolizes rejecting evil.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -81,7 +81,7 @@ function Faith() {
                                             </div>
                                             <div className='faith-content-box'>
                                                 <h4 className='p-0 m-0'>Zam-Zam</h4>
-                                                <p >Lorem ipsum dolor sit amet, consectetur ela mattis.</p>
+                                                <p >This holy water is a blessed gift from Makkah.</p>
                                             </div>
                                         </div>
                                     </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import './details.css';
 import { data } from '../../Components/packages/data';
@@ -9,11 +9,18 @@ function Details() {
     const { id } = useParams();
     const navigate = useNavigate();
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
     // Find the program dynamically based on the id
     const program = data.find(item => item.id === parseInt(id));
 
     // If no matching program is found, show a loader or a fallback UI
     if (!program) return <div><Cloader /></div>;
+
+
+
 
     return (
         <>

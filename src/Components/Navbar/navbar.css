@@ -1,6 +1,6 @@
 /* Custom Styles */
 .navbar {
-    background-color: #fffcf4 !important;
+    background-color: #ffffff !important;
     color: rgb(0, 0, 0);
     z-index: 1000;
     transition: background-color 0.3s;
@@ -15,7 +15,11 @@
 
 /* Logo Styling */
 .navbar-logo > img {
-    height: 70px;
+    height: 80px;
+    cursor: pointer;
+}
+.navbar-toggler {
+    border: none !important;
 }
 
 .navbar-nav .nav-item {
@@ -54,6 +58,9 @@
 
 /* Mobile Styling */
 @media (max-width: 768px) {
+    .responsive-styling {
+        display: none;
+    }
     .navbar-logo > img {
         height: 60px;
     }

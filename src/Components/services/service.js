@@ -20,7 +20,7 @@ function Services() {
                                 <div className='service-content'>
                                     <div className='service-card-title'>
                                         <h3>Umrah</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p>Experience a Umrah journey with our expert guidance and seamless arrangements.</p>
                                     </div>
                                     <div className='service-card-icon'>
                                         <i class="ri-arrow-right-up-line"></i>
@@ -33,7 +33,7 @@ function Services() {
                                 <div className='service-content'>
                                     <div className='service-card-title'>
                                         <h3>Hajj</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p>Embark on a sacred Hajj pilgrimage with comprehensive support for a smooth and meaningful journey.</p>
                                     </div>
                                     <div className='service-card-icon'>
                                         <i class="ri-arrow-right-up-line"></i>
@@ -46,7 +46,7 @@ function Services() {
                                 <div className='service-content'>
                                     <div className='service-card-title'>
                                         <h3>Tour</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p>Discover historical and religious sites with our well-planned and comfortable tour packages.</p>
                                     </div>
                                     <div className='service-card-icon'>
                                         <i class="ri-arrow-right-up-line"></i>
