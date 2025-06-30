@@ -7,6 +7,7 @@ import Cloader from './Components/Loader/Cloader';
 import Features from './Pages/Features/features';
 import Details from './Pages/Details/Details';
 import Service from './Pages/Services/Service';
+import HajjForm from './Pages/HajjForm/HajjForm';
 
 const MainPage = lazy(() => import('./Pages/MainPage'));
 // const Courses = lazy(() => import('./Pages/Courses/Courses'));
@@ -34,6 +35,7 @@ function App() {
           <Route path='/Features' element={<Features />} />
           <Route path='/details/:id' element={<Details />} />
           <Route path='/service' element={<Service />} />
+          <Route path='/hajjRegistrationForm' element={<HajjForm />} />
           {/* <Route path='/hajjFac' element={<HajjFacilities />} /> */}
           {/* <Route path='/hajj' element={<HajjPackages />} /> */}
         </Routes>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import './navbar.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import logo from '../../Assets/rfqlogo.png';
 
 function Header() {

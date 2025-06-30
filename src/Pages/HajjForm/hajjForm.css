@@ -1,0 +1,61 @@
+/* hajjFormEnhanced.css */
+
+.hajj-form-main.bg-gradient {
+    background: linear-gradient(to right, #e3ffe7, #d9e7ff);
+    padding-bottom: 40px;
+  }
+  
+  .hajj-form-card {
+    background: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-heading h2 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.2rem;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .person-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+  }
+  
+  .submit-btn {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .reg-form-btn{
+    text-align: center;
+    margin-top: 20px;
+  }
