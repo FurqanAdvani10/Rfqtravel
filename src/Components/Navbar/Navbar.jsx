@@ -52,7 +52,7 @@ function Header() {
             ))}
           </ul>
           <div className="navbar-icons">
-            <button className="btn contact-btn" onClick={() => navigate('/contactUs')}>Contact Now</button>
+            <button className="btn nav-contact-btn" onClick={() => navigate('/contactUs')}>Contact Now</button>
           </div>
         </div>
       </div>

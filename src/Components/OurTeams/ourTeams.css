@@ -152,8 +152,12 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 40px 20px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   animation: fadeInUp 0.6s ease forwards;
   opacity: 0;
+  min-height: 275px;
 }
 
 @keyframes fadeInUp {

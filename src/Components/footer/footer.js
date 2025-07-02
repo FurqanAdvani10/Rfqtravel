@@ -6,10 +6,13 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoIosSend } from "react-icons/io";
 import { CiCircleCheck } from "react-icons/ci";
 import footerLogo from '../../Assets/logo.jpg'
+import { useNavigate } from 'react-router-dom';
 
 
 
 function Footer() {
+
+    const navigate = useNavigate()
 
     return (
         <div>
@@ -22,7 +25,7 @@ function Footer() {
                             {/* <div className='footer-logo'>
                             <img src={footerLogo} alt='' />    
                         </div>  */}
-                            <li>Lorem ipsum dolor sit amet, consect etur adi pisicing elit sed do eiusmod.</li>
+                            <li>Your trusted companion for Hajj, Umrah & Islamic Tours.</li>
                             <hr className='hr-line' />
                             <li>
                                 <div className='foter-icon-content'>
@@ -62,20 +65,18 @@ function Footer() {
                     <div class="col ">
                         <h1>Links</h1>
                         <ul>
-                            <li>About Us</li>
-                            <li>Our Mission</li>
-                            <li>Meet the Team</li>
-                            <li>Our Project</li>
-                            <li>Contact</li>
+                            <li onClick={() => navigate('/')}>Home</li>
+                            <li onClick={() => navigate('/Features')}>Features</li>
+                            <li onClick={() => navigate('/hajj')}>Hajj Packages</li>
+                            <li onClick={() => navigate('/about')}>About Us</li>
+                            <li onClick={() => navigate('/contactUs')}>Contact</li>
                         </ul>
                     </div>
-                    <div class="col ">
-                        <h1>Explore</h1>
+                    <div class="col social">
+                        <h1>Social</h1>
                         <ul>
-                            <li>What We Offer</li>
-                            <li>Our Story</li>
-                            <li>Latest News</li>
-                            <li>Help Center</li>
+                            <li><a href='https://www.instagram.com/karwane_rafeequl_harmain/?hl=en'>Instagram</a></li>
+                            <li><a href='https://www.facebook.com/amir.anwar.378/'>Facebook</a> </li>
                         </ul>
                     </div>
 
