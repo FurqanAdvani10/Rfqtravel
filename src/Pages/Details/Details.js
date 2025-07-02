@@ -4,6 +4,7 @@ import './details.css';
 import { data } from '../../Components/packages/data';
 import { PageWrapper } from '../../Components';
 import Cloader from '../../Components/Loader/Cloader';
+import { hajjData } from '../HajjPackages/data';
 
 function Details() {
     const { id } = useParams();
@@ -14,7 +15,13 @@ function Details() {
     }, []);
 
     // Find the program dynamically based on the id
-    const program = data.find(item => item.id === parseInt(id));
+    const programCheck = data.find(item => item.id === parseInt(id));
+
+    const program = programCheck ? programCheck : hajjData.find(item => item.id === parseInt(id))
+
+
+    console.log(program)
+    // const data = data
 
     // If no matching program is found, show a loader or a fallback UI
     if (!program) return <div><Cloader /></div>;
@@ -36,7 +43,7 @@ function Details() {
             <div className="details-container section-padding">
                 <div className='container'>
 
-                    <div className="row align-items-center">
+                    <div className="row align-items-center justify-content-center">
                         {/* Image Section */}
                         <div className="col-md-6 mb-4">
                             <img
@@ -47,6 +54,7 @@ function Details() {
                         </div>
 
                         {/* Details Section */}
+                        {program.modules ? (
                         <div className="col-md-6">
                             <h2 className="mb-3 program-title">{program.name}</h2>
                             <p className="text-muted">{program.description}</p>
@@ -94,10 +102,11 @@ function Details() {
                                 </>
                             )}
                         </div>
+                        ) : []}
                     </div>
 
                     {/* Modules Section (if present) */}
-                    {program.modules && (
+                    {program.modules ? (
                         <div className="row mt-5">
                             <h3 className="mb-4 module-title">Modules</h3>
                             {program.modules.map((module, index) => (
@@ -122,7 +131,7 @@ function Details() {
                                 </div>
                             ))}
                         </div>
-                    )}
+                    ) : []}
                 </div>
 
             </div>

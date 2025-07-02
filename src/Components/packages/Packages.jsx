@@ -65,7 +65,7 @@ const Packages = () => {
                                         </div>
                                         <div class="course-footer">
                                             <div class="course-btn">
-                                                <a class="lab-btn-text" onClick={() => navigate(`/program-details/${program?.id}`)}>View More <i class="icofont-external-link"></i></a>
+                                                <a class="lab-btn-text" onClick={() => navigate(`/details/${program?.id}`)}>View More <i class="icofont-external-link"></i></a>
                                             </div>
                                         </div>
                                     </div>

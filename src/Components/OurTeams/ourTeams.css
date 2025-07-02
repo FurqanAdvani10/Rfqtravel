@@ -1,0 +1,204 @@
+/* Enhanced Modern Team Card Styles with Subtle Animations */
+:root {
+  --primary-color: #947139;
+  --text-dark: #101115;
+  --text-light: #666;
+  --card-bg: #fff;
+  --card-shadow: rgba(0, 0, 0, 0.08);
+}
+
+.our-team-main {
+  padding: 90px 0;
+  background: linear-gradient(135deg, #f9f9f9, #f0f0f0);
+  animation: fadeIn 0.6s ease;
+}
+
+.our-team-card-container {
+  margin-top: 60px;
+}
+
+.team-item {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px var(--card-shadow);
+  transition: all 0.4s ease;
+  overflow: hidden;
+  transform: translateY(0);
+  position: relative;
+}
+
+.team-item:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.team-inner {
+  padding: 36px 24px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.team-thumb {
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.team-thumb img {
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  border: 6px double var(--primary-color);
+  object-fit: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.team-item:hover .team-thumb img {
+  transform: scale(1.08);
+}
+
+.team-content a {
+  text-decoration: none;
+}
+
+.team-content h4 {
+  font-size: 1.6rem;
+  color: var(--text-dark);
+  font-weight: 700;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.team-content a:hover h4 {
+  color: var(--primary-color);
+}
+
+.team-content p {
+  font-size: 1.05rem;
+  color: var(--text-light);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.heading-with-sub h5 {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  animation: fadeIn 0.5s ease;
+}
+
+.heading-with-sub h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  animation: fadeInUp 0.7s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .team-thumb img {
+    height: 140px;
+    width: 140px;
+  }
+
+  .team-content h4 {
+    font-size: 1.4rem;
+  }
+
+  .team-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .team-thumb img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .team-content h4 {
+    font-size: 1.25rem;
+  }
+
+  .team-content p {
+    font-size: 0.95rem;
+  }
+}
+
+
+.team-item.no-img {
+  background: linear-gradient(135deg, #ffffff, #f5f5f5);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 40px 20px;
+  text-align: center;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.team-item.no-img:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.team-content h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.team-content a:hover h4 {
+  color: #947139;
+}
+
+.team-content p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .team-item.no-img {
+    padding: 30px 18px;
+  }
+  .team-content h4 {
+    font-size: 1.4rem;
+  }
+  .team-content p {
+    font-size: 0.95rem;
+  }
+}

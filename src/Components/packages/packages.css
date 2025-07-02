@@ -1,209 +1,251 @@
-/* Main Section for Courses */
-/* Course Card Styling */
+/* Modern Premium Card Design with Animation Enhancements */
 .course-card {
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    background-color: #fff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 28px;
+    background: linear-gradient(145deg, #ffffff, #f9f9f9);
+    transition: all 0.4s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
+    border: 1px solid #eee;
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .course-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* Rating Section */
-.course-reiew {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.ratting-count > h6 {
-    font-size: 13px;
-    font-weight: 300;
-    color: #888;
-}
-
-/* Course Content */
-.course-content {
-    padding: 0 5px 0px 5px ;
-    flex-grow: 1;
-}
-
-/* Card Image Styling */
 .course-card-img {
-    height: 200px;
+    height: 240px;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 12px;
+    margin-bottom: 20px;
 }
 
 .course-card-img > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
-}
-.icofont-ui-rating{
-    color: var(--them-color);
-}
-.card-price{
-    margin-bottom: 20px !important;
-}
-.card-price h4{
-    font-size: 20px;
-    font-weight: 600;
-}
-.hajj-packages {
-    margin-bottom: 20px !important;
-}
-.course-card-img > img:hover {
-    transform: scale(1.05); /* Zoom effect on hover */
+    transition: transform 0.4s ease;
+    border-radius: 12px;
 }
 
-/* Course Title Styling */
+.course-card-img > img:hover {
+    transform: scale(1.08);
+}
+
+.course-content {
+    padding: 0 8px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-reiew {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.ratting span i {
+    color: #ffc107;
+    font-size: 18px;
+    margin-right: 4px;
+    animation: scaleIn 0.5s ease;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.ratting-count > h6 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+}
+
 .course-card-title {
-    margin-block: 15px;
+    margin: 16px 0;
     text-align: start;
 }
 
 .course-card-title > h3 {
     font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 10px !important;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    /* white-space: nowrap; */
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1a1a1a;
     transition: color 0.3s ease;
 }
 
 .course-card-title > h3:hover {
-    color: var(--them-color); /* Accent color on hover */
+    color: #947139;
 }
 
-/* Footer Section */
+.course-card-title > p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.card-price {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.card-price h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2a738e;
+}
+
 .course-footer {
-    border-top: 1px solid #ecf0f3;
-    padding-top: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .course-footer > .course-btn > a {
-    outline: none;
     text-decoration: none;
-    color: #101115;
+    color: #222;
     font-weight: 500;
     font-size: 16px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+}
+
+.course-footer > .course-btn > a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #f16126;
+    transition: width 0.3s ease;
+}
+
+.course-footer > .course-btn > a:hover::after {
+    width: 100%;
 }
 
 .course-footer > .course-btn > a:hover {
-    /* background-color: #03cfc9; Accent color on hover */
     color: #f16126;
 }
 
-/* Button Text Styling */
 .lab-btn-text {
-    font-size: 1.125rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 600;
     text-transform: capitalize;
 }
 
 .lab-btn-text i {
     color: #f16126;
-    margin-left: 5px;
     transition: color 0.3s ease;
 }
 
 .lab-btn-text:hover i {
-    color: #03cfc9; /* Change color on hover */
-}
-.courses-sub {
-    margin-bottom: 30px;
+    color: #03cfc9;
 }
 
-.tuition-main-heading{
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hajj-packages {
+    margin-bottom: 48px;
+    text-align: center;
+    animation: fadeIn 0.7s ease;
 }
 
-.tuition-main-heading > h4 {
-    font-size: 40px;
+.hajj-packages h6 {
+    font-size: 1rem;
+    letter-spacing: 1.2px;
+    color: #947139;
     font-weight: 600;
-}
-.tuition-main-heading > h4 > span {
-    color: #2a738e;
+    margin-bottom: 6px;
 }
 
-.tuition-item-content > h2{
-    font-size: 26px;
-    margin-bottom: 30px;
-    color: #2a738e;
-}
-.tuition-item-content > p{
-    font-size: 15px;
+.hajj-packages h3 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #1a1a1a;
 }
 
-.course-card-title > p{
-    font-size: 14px;
-}
-
-.course-card {
-    cursor: pointer;
-}
-
-/* Responsive Design for Mobile Devices */
+/* Responsive Enhancements */
 @media (max-width: 768px) {
-    .course-card-img {
-        height: 100%;
-        overflow: hidden;
-        border-radius: 8px;
-        margin-bottom: 15px;
-    }
     .course-card {
-        height: auto;
-        padding: 15px;
+        padding: 20px;
+    }
+
+    .course-card-img {
+        height: 180px;
+        margin-bottom: 14px;
     }
 
     .course-card-title > h3 {
         font-size: 20px;
     }
 
-    .course-card-img > img {
-        height: 180px; /* Adjust image height for small screens */
-    }
-
     .course-footer > .course-btn > a {
         font-size: 14px;
-        padding: 6px 12px;
+    }
+
+    .card-price h4 {
+        font-size: 20px;
     }
 }
 
 @media (max-width: 480px) {
     .course-card {
-        height: auto;
-        padding: 12px;
+        padding: 16px;
+    }
+
+    .course-card-img {
+        height: 140px;
     }
 
     .course-card-title > h3 {
         font-size: 18px;
     }
 
-    .course-card-img > img {
-        height: 130px;
-    }
-
     .lab-btn-text {
         font-size: 1rem;
+    }
+
+    .card-price h4 {
+        font-size: 18px;
     }
 }

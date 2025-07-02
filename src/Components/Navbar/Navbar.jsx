@@ -25,39 +25,34 @@ function Header() {
     setMenuOpen(!menuOpen);
   };
 
+  const navItems = [
+    { name: 'Home', path: '/' },
+    { name: 'Features', path: '/features' },
+    { name: 'Hajj Packages', path: '/hajj' },
+    { name: 'Services', path: '/service' },
+    { name: 'About Us', path: '/about' },
+    { name: 'Contact Us', path: '/contactUs' },
+  ];
+
   return (
     <nav className={`navbar navbar-expand-lg fixed-top ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
-        <div className="navbar-logo" onClick={() => navigate('/')}>
+        <div className="navbar-logo" onClick={() => navigate('/')}> 
           <img src={logo} alt="Logo" />
         </div>
-        <button className="navbar-toggler" type="button" onClick={handleMenuClick} aria-controls="navbarNav" aria-expanded={menuOpen ? 'true' : 'false'} aria-label="Toggle navigation">
+        <button className="navbar-toggler" type="button" onClick={handleMenuClick} aria-controls="navbarNav" aria-expanded={menuOpen} aria-label="Toggle navigation">
           <FaBars />
         </button>
         <div className={`collapse navbar-collapse ${menuOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav mx-auto">
-            <li className="nav-item">
-              <a className="nav-link"  onClick={() => navigate('/')}>Home</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" onClick={() => navigate('/features')}>Features</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" onClick={() => navigate('/hajj')}>Hajj Packages</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link"  onClick={() => navigate('/service')}>Services</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link"  onClick={() => navigate('/about')}>About Us</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link"  onClick={() => navigate('/contactUs')}>Contact Us</a>
-            </li>
-            
+            {navItems.map((item, idx) => (
+              <li className="nav-item" key={idx}>
+                <a className="nav-link" onClick={() => { setMenuOpen(false); navigate(item.path); }}>{item.name}</a>
+              </li>
+            ))}
           </ul>
           <div className="navbar-icons">
-            <button className="btn btn-outline-primary" onClick={() => navigate('/contactUs')}>Contact Now</button>
+            <button className="btn contact-btn" onClick={() => navigate('/contactUs')}>Contact Now</button>
           </div>
         </div>
       </div>

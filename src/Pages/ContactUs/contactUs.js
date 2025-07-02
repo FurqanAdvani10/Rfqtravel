@@ -21,7 +21,7 @@ const ContactUs = () => {
   const infoCards = [
     { title: "Head Office", address: "Office #103 Iconic Trade Center Bahadurabad, Karachi ", icon: <FaMapMarkerAlt /> },
     { title: "Phone Number", address: "+9221 34857005, 34856651, 333 2184494 ,322 2184494", icon: <FaPhoneAlt /> },
-    { title: "Send Email", address: "info@rfqtravel.com", icon: <FaEnvelope /> },
+    { title: "Send Email", address: "rafiqulharamain1@hotmail.com", icon: <FaEnvelope /> },
     { title: "Our Website", address: "www.rfqtravel.com", icon: <FaGlobe /> },
   ];
 

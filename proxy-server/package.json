@@ -1,0 +1,11 @@
+{
+  "name": "cors-anywhere-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start:proxy": "node server.js"
+  },
+  "dependencies": {
+    "cors-anywhere": "^0.4.4"
+  }
+}

@@ -1,61 +1,90 @@
 /* hajjFormEnhanced.css */
 
 .hajj-form-main.bg-gradient {
-    background: linear-gradient(to right, #e3ffe7, #d9e7ff);
-    padding-bottom: 40px;
+  background: linear-gradient(to right, #e3ffe7, #d9e7ff);
+  padding: 40px 20px;
+}
+
+.hajj-form-card {
+  background: white;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+  width: 100%;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.person-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f5faff;
+}
+
+.person-section h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 14px 35px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.reg-form-btn {
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .form-title {
+    font-size: 1.4rem;
   }
-  
-  .hajj-form-card {
-    background: white;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .form-heading h2 {
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .form-group {
-    margin-bottom: 1.2rem;
-  }
-  
-  .form-control {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-  }
-  
-  .person-section {
-    margin-top: 2rem;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background: #f9f9f9;
-  }
-  
+
   .submit-btn {
-    display: inline-block;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    font-size: 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    width: 100%;
   }
-  
-  .submit-btn:hover {
-    background-color: #45a049;
-  }
-  
-  .reg-form-btn{
-    text-align: center;
-    margin-top: 20px;
-  }
+}
